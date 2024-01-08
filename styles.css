@@ -1,45 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  /* height: 100vh; */
+  min-height: 100vh;
+  /* max-width: 100vw; */
   font-family: "Libre Franklin", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background: #fff;
+  padding: 81px 27px 37px 28px;
 }
 
 header {
-  padding-top: 80px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
+  text-align: center;
 }
 
 header h1 {
   color: #15202a;
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 header .dot {
   color: #4c7bf3;
-  font-size: 32px;
+  font-family: Libre Franklin;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 header h2 {
-  width: 712px;
   color: #969696;
   text-align: center;
-  font-size: 48px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: 60px; /* 125% */
-  margin-top: 40px;
+  line-height: 32px; /* 145.455% */
+  margin-top: 32px;
+  text-align: center;
 }
 header span {
   color: #15202a;
@@ -48,41 +57,41 @@ header span {
 header h3 {
   color: #15202a;
   text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 16px;
+  margin-top: 15px;
 }
 .form {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 .form input {
-  width: 421px;
-  height: 56px;
+  width: 281px;
+  height: 40px;
   flex-shrink: 0;
   border-radius: 28px;
   border: 1px solid #c2d3ff;
   background: #fff;
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
-  padding-left: 30px;
+  padding-left: 32px;
 }
+
 input::placeholder {
   color: #b8c7ed;
-  font-family: Libre Franklin;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: 20px; /* 125% */
 }
 button {
-  width: 200px;
-  height: 56px;
+  width: 282px;
+  height: 40px;
   flex-shrink: 0;
   border-radius: 28px;
   background: #4c7bf3;
@@ -91,33 +100,38 @@ button {
   color: #fff;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #7496ed;
+  transition: 0.3s;
 }
 
 .main-img {
-  width: 644.23px;
-  height: 403px;
+  width: 320px;
+  height: 192px;
   flex-shrink: 0;
-  margin-top: 94px;
+  margin-top: 72px;
 }
 
 footer {
-  display: inline-flex;
-  padding-right: 1px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  padding-top: 51.5px;
-  padding-bottom: 49px;
+  gap: 27px;
+  margin-top: 120px;
 }
 footer .icons {
   display: flex;
   align-items: center;
   gap: 12.49px;
+  cursor: pointer;
 }
 
 .facebook {
@@ -174,4 +188,34 @@ footer .copyright {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 80px 401px 49px 402px;
+  }
+  header h1,
+  span {
+    font-size: 32px;
+  }
+  header h2 {
+    margin-top: 40px;
+    font-size: 48px;
+  }
+  header h3 {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .form {
+    flex-direction: row;
+  }
+  .form input {
+    width: 421px;
+    height: 56px;
+    font-size: 16px;
+  }
+  .form button {
+    width: 200px;
+    height: 56px;
+  }
 }
