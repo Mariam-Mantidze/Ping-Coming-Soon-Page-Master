@@ -15,13 +15,13 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  padding: 81px 27px 37px 28px;
+  padding: 81px 28px 37px 28px;
 }
 
 header {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  flex-direction: column; */
+  flex-direction: column;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@ input::placeholder {
   line-height: 20px; /* 125% */
 }
 button {
-  width: 282px;
+  width: 281px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 28px;
@@ -134,39 +134,41 @@ footer .icons {
   cursor: pointer;
 }
 
-.facebook {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 31.224px;
-  height: 31px;
-  flex-shrink: 0;
-  border: 0.918px solid rgba(76, 123, 243, 0.15);
-  border-radius: 50%;
+.icon {
+  fill: #4c7bf3;
 }
 
-.facebook img {
+.icon-oval:hover {
+  background: #4c7bf3;
+}
+.icon-oval:hover .icon {
+  fill: #fff;
+}
+
+.facebook svg {
   width: 7.025px;
   height: 14.725px;
-  flex-shrink: 0;
 }
-.twitter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 31.224px;
-  height: 31px;
-  flex-shrink: 0;
-  border: 0.918px solid rgba(76, 123, 243, 0.15);
-  border-radius: 50%;
-}
-
-.twitter img {
+.twitter svg {
   width: 20.296px;
   height: 20.15px;
-  flex-shrink: 0;
 }
-.instagram {
+
+.instagram svg {
+  width: 14.694px;
+  height: 14.588px;
+}
+.instagram svg .central-circle,
+.inner-fill {
+  fill: #fff;
+}
+
+.instagram svg .circle,
+.dot {
+  fill: #4c7bf3;
+}
+
+.icon-oval {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,16 +177,11 @@ footer .icons {
   flex-shrink: 0;
   border: 0.918px solid rgba(76, 123, 243, 0.15);
   border-radius: 50%;
-}
-.instagram img {
-  width: 14.694px;
-  height: 14.588px;
-  flex-shrink: 0;
 }
 
 footer .copyright {
   color: #969696;
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
