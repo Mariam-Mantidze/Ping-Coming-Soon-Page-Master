@@ -116,7 +116,7 @@ button:hover {
   width: 320px;
   height: 192px;
   flex-shrink: 0;
-  margin-top: 72px;
+  margin-top: 40px;
 }
 
 footer {
@@ -133,15 +133,15 @@ footer .icons {
   gap: 12.49px;
   cursor: pointer;
 }
-
-.icon {
+.icon g {
   fill: #4c7bf3;
 }
 
 .icon-oval:hover {
   background: #4c7bf3;
 }
-.icon-oval:hover .icon {
+
+.icon-oval:hover .icon g {
   fill: #fff;
 }
 
@@ -157,15 +157,6 @@ footer .icons {
 .instagram svg {
   width: 14.694px;
   height: 14.588px;
-}
-.instagram svg .central-circle,
-.inner-fill {
-  fill: #fff;
-}
-
-.instagram svg .circle,
-.dot {
-  fill: #4c7bf3;
 }
 
 .icon-oval {
