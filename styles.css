@@ -192,7 +192,7 @@ footer .copyright {
     padding: 80px 401px 49px 402px;
   }
   header h1,
-  span {
+  header .dot {
     font-size: 32px;
   }
   header h2 {
@@ -214,5 +214,14 @@ footer .copyright {
   .form button {
     width: 200px;
     height: 56px;
+    font-size: 16px;
+  }
+  .main-img {
+    width: 644.799px;
+    height: 403.501px;
+    margin-top: 94px;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }
