@@ -15,12 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // test input against regex
     if (!emailRegex.test(input.value)) {
       errorMessage.style.display = "block";
-      //   button.style.marginTop = "";
       input.style.border = "1px solid #FF5466";
     } else {
       errorMessage.style.display = "";
       input.style.border = "";
-      //   button.style.marginTop = "";
+      button.style.marginTop = "";
     }
   });
 });
