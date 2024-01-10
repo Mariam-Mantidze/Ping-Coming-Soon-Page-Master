@@ -6,6 +6,7 @@
     <title>Ping Coming Soon Page Master</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -13,11 +14,18 @@
       <h2>We are launching <span>soon!</span></h2>
       <h3>Subscribe and get notified</h3>
     </header>
-    <div class="form">
-      <form action="submit" class="submit-form"></form>
-      <input type="text" name="email-input" placeholder="Your email address…" />
-      <button>Notify Me</button>
-    </div>
+
+    <form action="submit" class="form">
+      <div class="input-wrapper">
+        <input
+          type="text"
+          name="email-input"
+          placeholder="Your email address…" />
+        <p class="error-message">Please provide a valid email address</p>
+      </div>
+
+      <button type="submit">Notify Me</button>
+    </form>
 
     <img
       class="main-img"
